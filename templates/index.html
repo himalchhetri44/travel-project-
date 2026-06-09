@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Booking</title>
+</head>
+<body>
+  <h1>Top Destinations</h1>
+  {% if destinations %}
+    <ul>
+      {% for destination in destinations %}
+        <li>
+          <strong>{{ destination.name }}</strong> - {{ destination.country }} - ${{ destination.price }} for {{ destination.duration }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No destinations available yet.</p>
+  {% endif %}
+</body>
+</html>
