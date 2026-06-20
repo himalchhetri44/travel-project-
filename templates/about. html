@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - Travel Explorer{% endblock %}
+
+{% block content %}
+<div class="about-page">
+    <h1>🌍 About Our Travel Agency</h1>
+    <p>We help you explore the world with the best deals.</p>
+    <p>Founded in 2024, we specialize in creating unforgettable travel experiences.</p>
+    
+    <div class="about-features">
+        <div class="feature">
+            <h3>✈️ Best Prices</h3>
+            <p>We offer guaranteed lowest rates on all packages.</p>
+        </div>
+        <div class="feature">
+            <h3>🏨 Quality Stays</h3>
+            <p>Handpicked accommodations for your comfort.</p>
+        </div>
+        <div class="feature">
+            <h3>🗺️ Expert Guides</h3>
+            <p>Local experts who know the hidden gems.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
